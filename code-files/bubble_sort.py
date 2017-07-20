@@ -1,3 +1,9 @@
+__author__ = "Harsh Thakkar"
+__license__ = "Creative Commons Attribution license (CC BY 4.0)"
+__email__ = "hthakkar@uni-bonn.de"
+__status__ = "Production"
+
+
 def inputde(arr):
     #arr = [5, 8, 4, 2, 1]
     for j in range(len(arr), 0, -1):

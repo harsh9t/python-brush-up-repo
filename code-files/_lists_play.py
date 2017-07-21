@@ -7,7 +7,7 @@ __status__ = "Production"
 mylist = []
 for i in range(0, 1000):
     mylist.append(2*i+1)
-print mylist
+print "The list contains %s items " % mylist
 
 #exponenting in lists
 print pow(9,4)

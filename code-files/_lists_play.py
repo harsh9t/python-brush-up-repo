@@ -14,3 +14,8 @@ print pow(9,4)
 
 #duplicating patterns in lists
 print [3,6,9] * 2
+
+#string split in to list
+astring = "Hello world harsh!"
+afewwords = astring.split(" ")
+print afewwords

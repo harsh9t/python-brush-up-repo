@@ -28,11 +28,11 @@ for x4 in range(3, 8, 2):
     print(x4)
 
 #trying xrange
-for a in xrange(5):
-    print a
+a = xrange(1, 5)
+print type(a)
 
+xa = range(1, 5)
+print type(xa)
 #comapring types of range and xrange
 #Nicely explained here -- http://www.geeksforgeeks.org/range-vs-xrange-python/, do refer!
-print type(x)
-print type(a)
 

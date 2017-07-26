@@ -6,6 +6,8 @@ phonebook = {"harsh" : 9824578690, "anand" : 20267293727, "deshzen" : 956789098,
 for names, numbers in phonebook.items():
     print "The contact for %s is %d" % (names, numbers)
 
+for ns, num in phonebook.iteritems():
+    print "The iterated items of the dictionary are %s %d" % (ns, num)
 del phonebook["harsh"]
 print phonebook
 

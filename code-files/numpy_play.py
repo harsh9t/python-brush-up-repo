@@ -35,6 +35,12 @@ for n1, n2 in l1:
 print "This is l2"
 print l2
 # TODO - DO THE SAME USING DICTIONARY
+c = {'gaurav':'patel','nilesh':'khan','ramesh':'sawant','anu':'marathe'}
+d = {'amit':'waghe','swapnil':'salvi','anish':'mane','raghu':'ranjan'}
+d1 = zip(c,d)
+print "D1 goes here"
+print d1
+
 
 # TODO: Try getting this in one line
 # weight = [z for z in xrange(1,101) for z in random.randrange(40,120)]

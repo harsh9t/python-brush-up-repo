@@ -19,27 +19,46 @@ Example:
 class MinStack(object):
     def __init__(self):
         """
-        initialize two stacks - normal one and min_stack to keep a track of min
+        initialize your data structure here.
         """
         self.stk = []
         self.minstk = []
 
     def push(self, x):
-        new_min = x
-        curr_min = self.getMin()
+        """
+        :type x: int
+        :rtype: void
+        """
+        new_min = x #0
+        curr_min = self.getMin() #1
         if new_min < curr_min or curr_min is None:
             self.minstk.append(new_min)
+        else:
+            self.minstk.append(curr_min)
         self.stk.append(x)
 
     def pop(self):
-        del self.stk[len(self.stk)-1]
-        del self.minstk[len(self.minstk)-1]
+        """
+        :rtype: void
+        """
+        if len(self.stk) == 0:
+            return None
+        if len(self.minstk) == 0:
+            return None
+        val = self.stk.pop()
+        self.minstk.pop()
 
 
     def top(self):
+        """
+        :rtype: int
+        """
         return self.stk[len(self.stk)-1]
 
     def getMin(self):
+        """
+        :rtype: int
+        """
         if len(self.minstk) == 0:
             return None
         else:
